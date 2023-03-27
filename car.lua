@@ -155,16 +155,6 @@ function car:draw2()
         love.graphics.print(self.prompt.text,self.prompt.x,self.prompt.y)
         love.graphics.setColor(1,1,1)
     end
-    if self.warning.visible == true then
-        love.graphics.setColor(0,0,0)
-        love.graphics.print(self.warning.text,self.warning.x,self.warning.y + 0.7)
-        love.graphics.print(self.warning.text,self.warning.x,self.warning.y - 0.7)
-        love.graphics.print(self.warning.text,self.warning.x+ 0.7,self.warning.y)
-        love.graphics.print(self.warning.text,self.warning.x- 0.7,self.warning.y)
-        love.graphics.setColor(1,1,1)
-        love.graphics.print(self.warning.text,self.warning.x,self.warning.y)
-        love.graphics.setColor(1,1,1)
-    end
 end 
 
 -- DRAW 3 | Drawing the character
