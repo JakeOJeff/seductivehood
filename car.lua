@@ -6,9 +6,9 @@ img = love.graphics.newImage("world/smoke.png")
 -- =====================================================
 -- LOADING CAR
 function car:initialize(body,wheel,destructed,x,y, wheel1x,wheel1y,wheel2x,wheel2y, acceleration, maxSpeed)
-    self.body = body or love.graphics.newImage("cars/car-full.png")
-    self.wheel = wheel or love.graphics.newImage("cars/wheel.png")
-    self.destructed = destructed or love.graphics.newImage("cars/car-destroyed.png")
+    self.body = love.graphics.newImage(body) 
+    self.wheel = love.graphics.newImage(wheel)
+    self.destructed = love.graphics.newImage(destructed)
     self.x = x or 200
     self.y = y or love.graphics.getHeight()
     self.w1x = wheel1x or 35
